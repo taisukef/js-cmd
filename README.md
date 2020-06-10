@@ -26,7 +26,14 @@ output to console (like printf)
 
 same as consoel.log()
 
-# How to build
+# install
+
+```
+$ sudo cp js /usr/local/bin/
+```
+
+
+# build
 
 build ChakraCore  
 https://github.com/microsoft/ChakraCore  
