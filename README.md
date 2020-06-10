@@ -1,5 +1,5 @@
 # js-cmd
-JavaScript on command line with ChakraCore
+JavaScript on command line with ChakraCore for macOS
 
 # usage
 
@@ -7,7 +7,13 @@ JavaScript on command line with ChakraCore
 $ js 1+1
 $ js "2*3"
 $ js 0xff
+$ js "new Date().getTime()"
 $ js "p(2); console.log(1);"
+$ js `
+for (let i = 0; i < 10; i++) {
+  p(i);
+}
+`
 ```
 
 # API
@@ -22,4 +28,10 @@ same as consoel.log()
 
 # How to build
 
-<a href=
+build ChakraCore  
+https://github.com/microsoft/ChakraCore  
+
+set LIBRARY_PATH on Makefile  
+```
+$ make
+```
